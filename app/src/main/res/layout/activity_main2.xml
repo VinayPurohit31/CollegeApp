@@ -8,12 +8,28 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="241dp"
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#FEC918"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Login sucess"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

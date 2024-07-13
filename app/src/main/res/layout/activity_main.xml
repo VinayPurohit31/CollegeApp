@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <EditText
-        android:id="@+id/textView2"
+        android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:background="@drawable/rounded_edittext"
@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <EditText
-        android:id="@+id/textView"
+        android:id="@+id/Email"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:background="@drawable/rounded_edittext"
@@ -62,11 +62,24 @@
         android:textColorHint="@color/black"
         app:circularflow_radiusInDP="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/password"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/CalculatorB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.062" />
 
     <Button
         android:id="@+id/CalculatorB"
