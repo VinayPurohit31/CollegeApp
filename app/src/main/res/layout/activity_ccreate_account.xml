@@ -15,7 +15,6 @@
         android:layout_height="210dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/rounded_button"
-
         android:src="@drawable/flappybird"
         app:layout_constraintBottom_toTopOf="@+id/Email"
         app:layout_constraintEnd_toEndOf="parent"
