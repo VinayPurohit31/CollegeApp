@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">LoginForm</string>
+    <string-array name="states_array">
+        <item>MP</item>
+        <item>Maharashtra</item>
+        <item>Gujrat</item>
+        <!-- Add all states -->
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Canada</item>
+        <!-- Add all countries -->
+    </string-array>
 </resources>

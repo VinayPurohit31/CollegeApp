@@ -38,11 +38,25 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
+        android:id="@+id/logoutbutton"
         android:layout_width="145dp"
         android:layout_height="65dp"
-        android:id="@+id/logoutbutton"
+        android:backgroundTint="#D71414"
         android:text="LogOut"
-        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:id="@+id/CustomerFormBtn"
+        android:text="Fill Info"
+        android:textSize="20dp"
         android:textColor="@color/black"
         android:backgroundTint="#D71414"
         app:layout_constraintBottom_toBottomOf="parent"

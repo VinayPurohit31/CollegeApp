@@ -15,12 +15,17 @@ public class MainActivity2 extends AppCompatActivity {
     TextView username;
     FirebaseAuth auth;
     FirebaseUser user;
-    Button logout;
+    Button logout,fillInfoBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         logout=findViewById(R.id.logoutbutton);
+        fillInfoBtn=findViewById(R.id.CustomerFormBtn);
+        fillInfoBtn.setOnClickListener(v -> {
+            Intent intent=new Intent(getApplicationContext(),CustomerInfo.class);
+            startActivity(intent);
+        });
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();
         username=findViewById(R.id.username);
