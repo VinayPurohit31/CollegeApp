@@ -16,6 +16,9 @@
             android:name=".CustomerInfo"
             android:exported="false" />
         <activity
+            android:name=".Home_page"
+            android:exported="false" />
+        <activity
             android:name=".Calculator"
             android:exported="false" />
         <activity

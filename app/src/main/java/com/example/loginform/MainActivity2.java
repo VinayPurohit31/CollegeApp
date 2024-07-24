@@ -15,13 +15,20 @@ public class MainActivity2 extends AppCompatActivity {
     TextView username;
     FirebaseAuth auth;
     FirebaseUser user;
-    Button logout,fillInfoBtn;
+    Button logout,fillInfoBtn,homeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         logout=findViewById(R.id.logoutbutton);
         fillInfoBtn=findViewById(R.id.CustomerFormBtn);
+        homeBtn=findViewById(R.id.HomePageBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHome();
+            }
+        });
         fillInfoBtn.setOnClickListener(v -> {
             Intent intent=new Intent(getApplicationContext(),CustomerInfo.class);
             startActivity(intent);
@@ -44,6 +51,11 @@ public class MainActivity2 extends AppCompatActivity {
             finish();
         });
 
+    }
+
+    private void openHome() {
+        Intent intent=new Intent(getApplicationContext(),Home_page.class);
+        startActivity(intent);
     }
 
 }
